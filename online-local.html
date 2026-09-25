@@ -1,0 +1,7 @@
+<!-- Modo online en local: abre esta página en dos pestañas del mismo navegador y elige "Online" en ambas.
+     Carga una sala falsa (tools/fake-room.js) y después el juego (index.html) tal cual. -->
+<meta charset="utf-8">
+<script src="tools/fake-room.js"></script>
+<script>
+fetch('index.html').then(r => r.text()).then(html => { document.open(); document.write(html); document.close(); });
+</script>

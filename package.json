@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "start": "python3 -m http.server 8000",
-    "test": "node tests/simtest.js && node tests/aimtest.js && node tests/servetest.js && node tests/nettest.js"
+    "test": "node tests/simtest.js && node tests/aimtest.js && node tests/servetest.js && node tests/nettest.js",
+    "e2e": "python3 tests/e2e/smoke.py && python3 tests/e2e/online.py",
+    "sweep": "node tools/sweep.js"
   },
   "license": "MIT"
 }
