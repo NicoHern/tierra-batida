@@ -1,0 +1,11 @@
+{
+  "name": "tierra-batida",
+  "version": "1.0.0",
+  "description": "Juego de tenis en tierra batida para el navegador con Three.js, inspirado en Virtua Tennis",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node tests/simtest.js && node tests/aimtest.js && node tests/servetest.js && node tests/nettest.js"
+  },
+  "license": "MIT"
+}
